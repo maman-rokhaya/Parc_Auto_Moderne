@@ -105,7 +105,7 @@ public class Main {
         Test<Vehicule> regleRevision = v ->
                 v.getKilometrage() > seuilKm || v.getAnnee() < seuilAnnee;
 
-        System.out.println("\nVehicules a reviser (km>" + seuilKm + " OU annee<" + seuilAnnee + ") ");
+        System.out.println("\nVehicules a reviser (km" + seuilKm + " OU annee<" + seuilAnnee + ") ");
         service.aReviser(regleRevision).forEach(Vehicule::afficher);
 
 
