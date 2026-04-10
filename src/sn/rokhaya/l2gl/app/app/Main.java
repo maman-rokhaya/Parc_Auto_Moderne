@@ -97,7 +97,7 @@ public class Main {
             System.out.println("Erreur attendue (deja terminee) : " + ex.getMessage());
         }
 
-        System.out.println("\n--- Rapport final ---");
+        System.out.println("\n Rapport final ");
         service.genererRapport().forEach(lr -> System.out.println("  " + lr));
 
         int seuilKm = 100000;
